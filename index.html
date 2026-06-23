@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Ghost Cursor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>👻 Cute Ghost Cursor</h1>
+    <p>Move your mouse around and change the ghost color!</p>
+
+    <!-- Color Picker -->
+    <div class="controls">
+        <label for="ghostColor">🎨 Ghost Color:</label>
+        <input type="color" id="ghostColor" value="#c8bfff">
+    </div>
+
+    <!-- Ghost -->
+    <div class="ghost" id="ghost">
+        <svg viewBox="0 0 100 100">
+
+            <!-- Ghost Body -->
+            <path
+                id="ghostBody"
+                d="M20 80
+                   V40
+                   C20 20 35 10 50 10
+                   C65 10 80 20 80 40
+                   V80
+                   L72 70
+                   L62 80
+                   L50 70
+                   L38 80
+                   L28 70
+                   Z"
+                fill="#c8bfff"/>
+
+            <!-- Eyes -->
+            <circle cx="40" cy="42" r="6" fill="#222"/>
+            <circle cx="60" cy="42" r="6" fill="#222"/>
+
+            <!-- Eye shine -->
+            <circle cx="38" cy="40" r="2" fill="white"/>
+            <circle cx="58" cy="40" r="2" fill="white"/>
+
+            <!-- Blush -->
+            <circle cx="30" cy="55" r="4" fill="#ffb6c1" opacity="0.7"/>
+            <circle cx="70" cy="55" r="4" fill="#ffb6c1" opacity="0.7"/>
+
+            <!-- Smile -->
+            <path
+                d="M42 60 Q50 68 58 60"
+                stroke="#222"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- Trail Dots -->
+    <div class="trail t1"></div>
+    <div class="trail t2"></div>
+    <div class="trail t3"></div>
+    <div class="trail t4"></div>
+    <div class="trail t5"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
